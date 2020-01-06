@@ -43,7 +43,7 @@ class TestController extends Controller
         $length=strlen($test);
         $pass2='';
         for($i=0;$i<$length;$i++){
-            $pass2.=chr(ord($test[$i])+3);
+            $pass2.=chr(ord($test[$i])-3);
         }
         echo $pass2;
     }
