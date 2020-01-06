@@ -19,6 +19,7 @@ Route::get('/', function () {
 
 
 Route::get('/test/ord','Test\TestController@ord');
+Route::get('/test/chr','Test\TestController@chr');
 Route::any('/test/hello','Test\TestController@hello');
 Route::any('/test/adduser','Test\TestController@adduser');
 

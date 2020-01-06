@@ -34,8 +34,17 @@ class TestController extends Controller
         $length=strlen($char);
         $pass='';
         for($i=0;$i<$length;$i++){
-            $pass.=ord($char[$i]);
+            $pass.=chr(ord($char[$i])+3);
         }
         echo $pass;
+    }
+    public function chr(){
+        $test=$_GET['test'];
+        $length=strlen($test);
+        $pass2='';
+        for($i=0;$i<$length;$i++){
+            $pass2.=chr(ord($test[$i])+3);
+        }
+        echo $pass2;
     }
 }
