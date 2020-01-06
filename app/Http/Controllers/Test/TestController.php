@@ -28,4 +28,14 @@ class TestController extends Controller
        $res=UserModel::insertGetId($data);
         var_dump($res);
     }
+
+    public function ord(){
+        $char=$_GET['char'];
+        $length=strlen($char);
+        $pass='';
+        for($i=0;$i<$length;$i++){
+            $pass.=ord($char[$i]);
+        }
+        echo $pass;
+    }
 }

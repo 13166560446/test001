@@ -18,7 +18,7 @@ Route::get('/', function () {
 //Route::get('/','Index\IndexController@Index');  //网站首页
 
 
-
+Route::get('/test/ord','Test\TestController@ord');
 Route::any('/test/hello','Test\TestController@hello');
 Route::any('/test/adduser','Test\TestController@adduser');
 
